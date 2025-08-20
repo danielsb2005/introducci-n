@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Futbolístico</title>
+</head>
+<body>
+    <h1>Formulario de Registro - Fútbol</h1>
+    <form action="/procesar-registro-futbol" method="post">
+
+        
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" name="nombre" id="nombre" required><br><br>
+
+        
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" required><br><br>
+
+        
+        <label for="email">Correo electrónico:</label>
+        <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" required><br><br>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" id="password" required><br><br>
+
+       
+        <label for="pais">País:</label>
+        <select name="pais" id="pais" required>
+            <option value="">Selecciona tu país</option>
+            <option value="es">España</option>
+            <option value="mx">México</option>
+            <option value="ar">Argentina</option>
+            <option value="co">Colombia</option>
+        </select><br><br>
+
+        
+        <label for="posicion">¿Qué posición juegas?</label>
+        <select name="posicion" id="posicion" required>
+            <option value="">Selecciona una posición</option>
+            <option value="portero">Portero</option>
+            <option value="defensa">Defensa</option>
+            <option value="medio">Mediocampista</option>
+            <option value="delantero">Delantero</option>
+        </select><br><br>
+
+       
+        <label for="nivel">Nivel de juego:</label>
+        <select name="nivel" id="nivel" required>
+            <option value="">Selecciona tu nivel</option>
+            <option value="aficionado">Aficionado</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="avanzado">Avanzado</option>
+            <option value="profesional">Profesional</option>
+        </select><br><br>
+
+        
+        <label for="equipo">Equipo favorito:</label>
+        <input type="text" name="equipo" id="equipo" placeholder="Ej. FC Barcelona"><br><br>
+
+        
+        <label>Género:</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino" required>
+        <label for="masculino">Masculino</label><br>
+
+        <input type="radio" id="femenino" name="genero" value="femenino" required>
+        <label for="femenino">Femenino</label><br>
+
+        <input type="radio" id="otro" name="genero" value="otro" required>
+        <label for="otro">Otro</label><br><br>
+
+       
+        <label>¿Qué aspectos del fútbol te interesan?</label><br>
+        <input type="checkbox" id="jugar" name="intereses[]" value="jugar">
+        <label for="jugar">Jugar</label><br>
+
+        <input type="checkbox" id="ver-partidos" name="intereses[]" value="ver-partidos">
+        <label for="ver-partidos">Ver partidos</label><br>
+
+        <input type="checkbox" id="analisis" name="intereses[]" value="analisis">
+        <label for="analisis">Análisis táctico</label><br>
+
+        <input type="checkbox" id="fantasy" name="intereses[]" value="fantasy">
+        <label for="fantasy">Fantasy/Fútbol virtual</label><br><br>
+
+        
+        <label for="descripcion">Descripción personal o experiencia futbolística:</label><br>
+        <textarea name="descripcion" id="descripcion" rows="4" cols="50" placeholder="Cuéntanos sobre tu experiencia o pasión por el fútbol..."></textarea><br><br>
+
+        
+        <button type="submit" id="btenviar">Registrarse</button>
+
+    </form>
+</body>
+</html>

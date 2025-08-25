@@ -1,0 +1,50 @@
+.element{
+    border: 1px solid #333;
+    padding: 4px;
+    width: 65px;
+    height: 65px;
+}
+.element:hover{
+    transform: scale(1.1); box-shadow: 0 0 10px rgba(0,0,0,0.5); background-color: #333;     color: white; 
+}
+.element .number{
+    font-size: 10px;
+    text-align: left;
+}
+.element .symbol{
+    font-size: 20px;
+    font-weight: bold;
+}
+.element .name{
+    font-size: 9px;
+}
+.nonmetal{
+    background-color: rgb(46, 114, 185);
+}
+.metalalca{
+    background-color: aqua;
+}
+.gasnoble{
+    background-color: rgb(240, 76, 76);
+}
+.metalalcalinoterreos{
+    background-color: rgb(255, 122, 122);
+}
+.metalestransicionales{
+    background-color: rgb(215, 141, 218);
+}
+.metalprotransicionales{
+    background-color: rgb(105, 241, 123);
+}
+.metaloides{
+    background-color: blanchedalmond;
+}
+.lantanidos{
+    background-color: rgb(165, 233, 252);
+}
+.actinoides{
+    background-color: rgb(241, 188, 108);
+}
+.propidesconocidas{
+    background-color: #999898;
+}

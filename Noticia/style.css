@@ -1,0 +1,148 @@
+/* Variables */
+:root {
+  --color-primario: #2f5233;
+  --color-secundario: #4caf50;
+  --color-acento: #f1c40f;
+  --color-fondo: #fdfaf6;
+  --color-blanco: #ffffff;
+  --color-texto: #2c3e50;
+ 
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+header {
+  background: var(--color-primario);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+nav {
+  background: var(--color-secundario);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0.8rem;
+}
+nav ul li {
+  margin: 0 20px;
+}
+nav ul li a {
+  color: var(--color-blanco);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+nav ul li a:hover {
+  background: var(--color-primario);
+}
+
+/* Main */
+main {
+  padding: 2rem 5%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Introducción */
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Tabla */
+.tabla-noticias h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--color-primario);
+}
+.table-container {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-blanco);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--sombra);
+}
+th, td {
+  padding: 14px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+th {
+  background: var(--color-secundario);
+  color: var(--color-blanco);
+}
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+tr:hover {
+  background: #eef6fb;
+}
+
+/* Cards */
+.cards h2 {
+  text-align: center;
+  margin: 2rem 0 1.5rem;
+  color: var(--color-primario);
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: var(--color-blanco);
+  border-radius: 12px;
+  box-shadow: var(--sombra);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card img {
+  width: 100%;
+  display: block;
+}
+.card-content {
+  padding: 1rem;
+}
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--color-secundario);
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+
+footer {
+  background: var(--color-primario);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+footer a {
+  color: var(--color-acento);
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
